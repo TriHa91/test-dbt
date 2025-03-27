@@ -1,0 +1,70 @@
+2025-03-27_06:56:52.87729 277:C 27 Mar 2025 06:56:52.877 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2025-03-27_06:56:52.87743 277:C 27 Mar 2025 06:56:52.877 # Redis version=7.0.15, bits=64, commit=f35f36a2, modified=1, pid=277, just started
+2025-03-27_06:56:52.87743 277:C 27 Mar 2025 06:56:52.877 # Configuration loaded
+2025-03-27_06:56:52.87801 277:M 27 Mar 2025 06:56:52.877 * monotonic clock: POSIX clock_gettime
+2025-03-27_06:56:52.87899                 _._                                                  
+2025-03-27_06:56:52.87901            _.-``__ ''-._                                             
+2025-03-27_06:56:52.87901       _.-``    `.  `_.  ''-._           Redis 7.0.15 (f35f36a2/1) 64 bit
+2025-03-27_06:56:52.87901   .-`` .-```.  ```\/    _.,_ ''-._                                  
+2025-03-27_06:56:52.87902  (    '      ,       .-`  | `,    )     Running in standalone mode
+2025-03-27_06:56:52.87902  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 0
+2025-03-27_06:56:52.87902  |    `-._   `._    /     _.-'    |     PID: 277
+2025-03-27_06:56:52.87903   `-._    `-._  `-./  _.-'    _.-'                                   
+2025-03-27_06:56:52.87903  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+2025-03-27_06:56:52.87903  |    `-._`-._        _.-'_.-'    |           https://redis.io       
+2025-03-27_06:56:52.87904   `-._    `-._`-.__.-'_.-'    _.-'                                   
+2025-03-27_06:56:52.87904  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+2025-03-27_06:56:52.87904  |    `-._`-._        _.-'_.-'    |                                  
+2025-03-27_06:56:52.87905   `-._    `-._`-.__.-'_.-'    _.-'                                   
+2025-03-27_06:56:52.87905       `-._    `-.__.-'    _.-'                                       
+2025-03-27_06:56:52.87905           `-._        _.-'                                           
+2025-03-27_06:56:52.87908               `-.__.-'                                               
+2025-03-27_06:56:52.87908 
+2025-03-27_06:56:52.87908 277:M 27 Mar 2025 06:56:52.879 # Server initialized
+2025-03-27_06:56:52.87909 277:M 27 Mar 2025 06:56:52.879 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+2025-03-27_06:56:52.87984 277:M 27 Mar 2025 06:56:52.879 * The server is now ready to accept connections at /var/opt/gitlab/redis/redis.socket
+2025-03-27_07:01:53.05783 277:M 27 Mar 2025 07:01:53.057 * 10 changes in 300 seconds. Saving...
+2025-03-27_07:01:53.08132 277:M 27 Mar 2025 07:01:53.057 * Background saving started by pid 949
+2025-03-27_07:01:53.08137 949:C 27 Mar 2025 07:01:53.069 * DB saved on disk
+2025-03-27_07:01:53.08137 949:C 27 Mar 2025 07:01:53.069 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+2025-03-27_07:01:53.15835 277:M 27 Mar 2025 07:01:53.158 * Background saving terminated with success
+2025-03-27_07:06:54.06538 277:M 27 Mar 2025 07:06:54.065 * 10 changes in 300 seconds. Saving...
+2025-03-27_07:06:54.06613 277:M 27 Mar 2025 07:06:54.066 * Background saving started by pid 1194
+2025-03-27_07:06:54.07756 1194:C 27 Mar 2025 07:06:54.077 * DB saved on disk
+2025-03-27_07:06:54.07861 1194:C 27 Mar 2025 07:06:54.078 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+2025-03-27_07:06:54.16668 277:M 27 Mar 2025 07:06:54.166 * Background saving terminated with success
+2025-03-27_07:11:55.06385 277:M 27 Mar 2025 07:11:55.063 * 10 changes in 300 seconds. Saving...
+2025-03-27_07:11:55.06460 277:M 27 Mar 2025 07:11:55.064 * Background saving started by pid 1342
+2025-03-27_07:11:55.07608 1342:C 27 Mar 2025 07:11:55.075 * DB saved on disk
+2025-03-27_07:11:55.07700 1342:C 27 Mar 2025 07:11:55.076 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+2025-03-27_07:11:55.16518 277:M 27 Mar 2025 07:11:55.165 * Background saving terminated with success
+2025-03-27_07:16:56.05144 277:M 27 Mar 2025 07:16:56.051 * 10 changes in 300 seconds. Saving...
+2025-03-27_07:16:56.05219 277:M 27 Mar 2025 07:16:56.052 * Background saving started by pid 1485
+2025-03-27_07:16:56.06813 1485:C 27 Mar 2025 07:16:56.068 * DB saved on disk
+2025-03-27_07:16:56.06889 1485:C 27 Mar 2025 07:16:56.068 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+2025-03-27_07:16:56.15316 277:M 27 Mar 2025 07:16:56.153 * Background saving terminated with success
+2025-03-27_07:21:57.05185 277:M 27 Mar 2025 07:21:57.051 * 10 changes in 300 seconds. Saving...
+2025-03-27_07:21:57.05273 277:M 27 Mar 2025 07:21:57.052 * Background saving started by pid 1629
+2025-03-27_07:21:57.07002 1629:C 27 Mar 2025 07:21:57.069 * DB saved on disk
+2025-03-27_07:21:57.07094 1629:C 27 Mar 2025 07:21:57.070 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+2025-03-27_07:21:57.15327 277:M 27 Mar 2025 07:21:57.153 * Background saving terminated with success
+2025-03-27_07:26:58.04125 277:M 27 Mar 2025 07:26:58.041 * 10 changes in 300 seconds. Saving...
+2025-03-27_07:26:58.04199 277:M 27 Mar 2025 07:26:58.041 * Background saving started by pid 1759
+2025-03-27_07:26:58.05693 1759:C 27 Mar 2025 07:26:58.056 * DB saved on disk
+2025-03-27_07:26:58.05780 1759:C 27 Mar 2025 07:26:58.057 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+2025-03-27_07:26:58.14253 277:M 27 Mar 2025 07:26:58.142 * Background saving terminated with success
+2025-03-27_07:31:59.01472 277:M 27 Mar 2025 07:31:59.014 * 10 changes in 300 seconds. Saving...
+2025-03-27_07:31:59.01558 277:M 27 Mar 2025 07:31:59.015 * Background saving started by pid 2036
+2025-03-27_07:31:59.03180 2036:C 27 Mar 2025 07:31:59.031 * DB saved on disk
+2025-03-27_07:31:59.03269 2036:C 27 Mar 2025 07:31:59.032 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+2025-03-27_07:31:59.11607 277:M 27 Mar 2025 07:31:59.115 * Background saving terminated with success
+2025-03-27_07:37:00.10043 277:M 27 Mar 2025 07:37:00.100 * 10 changes in 300 seconds. Saving...
+2025-03-27_07:37:00.10127 277:M 27 Mar 2025 07:37:00.101 * Background saving started by pid 2231
+2025-03-27_07:37:00.11807 2231:C 27 Mar 2025 07:37:00.117 * DB saved on disk
+2025-03-27_07:37:00.11899 2231:C 27 Mar 2025 07:37:00.118 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+2025-03-27_07:37:00.20187 277:M 27 Mar 2025 07:37:00.201 * Background saving terminated with success
+2025-03-27_07:42:01.04045 277:M 27 Mar 2025 07:42:01.040 * 10 changes in 300 seconds. Saving...
+2025-03-27_07:42:01.04169 277:M 27 Mar 2025 07:42:01.041 * Background saving started by pid 2364
+2025-03-27_07:42:01.06398 2364:C 27 Mar 2025 07:42:01.063 * DB saved on disk
+2025-03-27_07:42:01.06503 2364:C 27 Mar 2025 07:42:01.064 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+2025-03-27_07:42:01.14217 277:M 27 Mar 2025 07:42:01.142 * Background saving terminated with success

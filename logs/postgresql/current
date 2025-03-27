@@ -1,0 +1,84 @@
+2025-03-27_06:57:10.05810 LOG:  starting PostgreSQL 16.8 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, 64-bit
+2025-03-27_06:57:10.06216 LOG:  listening on Unix socket "/var/opt/gitlab/postgresql/.s.PGSQL.5432"
+2025-03-27_06:57:10.07193 LOG:  database system was interrupted; last known up at 2025-03-27 06:51:05 GMT
+2025-03-27_06:57:10.21399 LOG:  database system was not properly shut down; automatic recovery in progress
+2025-03-27_06:57:10.21874 LOG:  redo starts at 0/14DF1F8
+2025-03-27_06:57:10.25837 LOG:  invalid record length at 0/1CC5990: expected at least 24, got 0
+2025-03-27_06:57:10.25840 LOG:  redo done at 0/1CC5968 system usage: CPU: user: 0.01 s, system: 0.00 s, elapsed: 0.03 s
+2025-03-27_06:57:10.41338 LOG:  database system is ready to accept connections
+2025-03-27_06:57:13.20714 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2025-03-27_06:57:13.20729 FATAL:  Peer authentication failed for user "gitlab"
+2025-03-27_06:57:13.20730 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
+2025-03-27_06:57:13.30269 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2025-03-27_06:57:13.30271 FATAL:  Peer authentication failed for user "gitlab"
+2025-03-27_06:57:13.30272 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
+2025-03-27_06:57:13.39013 LOG:  no match in usermap "gitlab" for user "gitlab" authenticated as "root"
+2025-03-27_06:57:13.39016 FATAL:  Peer authentication failed for user "gitlab"
+2025-03-27_06:57:13.39016 DETAIL:  Connection matched file "/var/opt/gitlab/postgresql/data/pg_hba.conf" line 70: "local   all         all                               peer map=gitlab"
+2025-03-27_06:57:48.37606 ERROR:  relation "feature_gates" does not exist at character 491
+2025-03-27_06:57:48.37618 STATEMENT:  SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2025-03-27_06:57:48.37619 	       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+2025-03-27_06:57:48.37619 	       c.collname, col_description(a.attrelid, a.attnum) AS comment,
+2025-03-27_06:57:48.37620 	       attgenerated as attgenerated
+2025-03-27_06:57:48.37620 	  FROM pg_attribute a
+2025-03-27_06:57:48.37620 	  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2025-03-27_06:57:48.37621 	  LEFT JOIN pg_type t ON a.atttypid = t.oid
+2025-03-27_06:57:48.37621 	  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+2025-03-27_06:57:48.37622 	 WHERE a.attrelid = '"feature_gates"'::regclass
+2025-03-27_06:57:48.37622 	   AND a.attnum > 0 AND NOT a.attisdropped
+2025-03-27_06:57:48.37626 	 ORDER BY a.attnum
+2025-03-27_06:57:48.37626 	
+2025-03-27_07:00:01.23731 LOG:  duration: 1208.951 ms  statement: SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2025-03-27_07:00:01.23735 	       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+2025-03-27_07:00:01.23735 	       c.collname, col_description(a.attrelid, a.attnum) AS comment,
+2025-03-27_07:00:01.23736 	       attgenerated as attgenerated
+2025-03-27_07:00:01.23736 	  FROM pg_attribute a
+2025-03-27_07:00:01.23736 	  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2025-03-27_07:00:01.23737 	  LEFT JOIN pg_type t ON a.atttypid = t.oid
+2025-03-27_07:00:01.23737 	  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+2025-03-27_07:00:01.23738 	 WHERE a.attrelid = '"application_settings"'::regclass
+2025-03-27_07:00:01.23738 	   AND a.attnum > 0 AND NOT a.attisdropped
+2025-03-27_07:00:01.23739 	 ORDER BY a.attnum
+2025-03-27_07:00:01.23739 	
+2025-03-27_07:00:20.92647 LOG:  duration: 1133.569 ms  statement: SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2025-03-27_07:00:20.92649 	       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+2025-03-27_07:00:20.92652 	       c.collname, col_description(a.attrelid, a.attnum) AS comment,
+2025-03-27_07:00:20.92652 	       attgenerated as attgenerated
+2025-03-27_07:00:20.92652 	  FROM pg_attribute a
+2025-03-27_07:00:20.92652 	  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2025-03-27_07:00:20.92653 	  LEFT JOIN pg_type t ON a.atttypid = t.oid
+2025-03-27_07:00:20.92653 	  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+2025-03-27_07:00:20.92653 	 WHERE a.attrelid = '"application_settings"'::regclass
+2025-03-27_07:00:20.92654 	   AND a.attnum > 0 AND NOT a.attisdropped
+2025-03-27_07:00:20.92654 	 ORDER BY a.attnum
+2025-03-27_07:00:20.92654 	
+2025-03-27_07:00:37.57380 LOG:  duration: 1163.464 ms  statement: SELECT relnamespace::regnamespace as schemaname,
+2025-03-27_07:00:37.57384 	       relname as relname,
+2025-03-27_07:00:37.57386 	       pg_total_relation_size(oid) bytes
+2025-03-27_07:00:37.57386 	  FROM pg_class
+2025-03-27_07:00:37.57387 	 WHERE relkind = 'r';
+2025-03-27_07:00:37.57388 	
+2025-03-27_07:01:32.42737 LOG:  duration: 1079.974 ms  statement: SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2025-03-27_07:01:32.42741 	       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+2025-03-27_07:01:32.42742 	       c.collname, col_description(a.attrelid, a.attnum) AS comment,
+2025-03-27_07:01:32.42743 	       attgenerated as attgenerated
+2025-03-27_07:01:32.42745 	  FROM pg_attribute a
+2025-03-27_07:01:32.42745 	  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2025-03-27_07:01:32.42746 	  LEFT JOIN pg_type t ON a.atttypid = t.oid
+2025-03-27_07:01:32.42746 	  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+2025-03-27_07:01:32.42747 	 WHERE a.attrelid = '"application_settings"'::regclass
+2025-03-27_07:01:32.42748 	   AND a.attnum > 0 AND NOT a.attisdropped
+2025-03-27_07:01:32.42748 	 ORDER BY a.attnum
+2025-03-27_07:01:32.42749 	
+2025-03-27_07:01:43.51180 LOG:  duration: 1048.234 ms  statement: SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2025-03-27_07:01:43.51184 	       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+2025-03-27_07:01:43.51184 	       c.collname, col_description(a.attrelid, a.attnum) AS comment,
+2025-03-27_07:01:43.51185 	       attgenerated as attgenerated
+2025-03-27_07:01:43.51185 	  FROM pg_attribute a
+2025-03-27_07:01:43.51186 	  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2025-03-27_07:01:43.51186 	  LEFT JOIN pg_type t ON a.atttypid = t.oid
+2025-03-27_07:01:43.51187 	  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+2025-03-27_07:01:43.51187 	 WHERE a.attrelid = '"application_settings"'::regclass
+2025-03-27_07:01:43.51188 	   AND a.attnum > 0 AND NOT a.attisdropped
+2025-03-27_07:01:43.51188 	 ORDER BY a.attnum
+2025-03-27_07:01:43.51189 	

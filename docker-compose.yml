@@ -1,0 +1,18 @@
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    restart: always
+    hostname: '34.44.75.21'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'http://34.44.75.21'
+        gitlab_rails['gitlab_shell_ssh_port'] = 2224
+    ports:
+      - 80:80
+      - 443:443
+      - 2224:22
+    volumes:
+      - ./config:/etc/gitlab
+      - ./logs:/var/log/gitlab
+      - ./data:/var/opt/gitlab
+    shm_size: '256m'
